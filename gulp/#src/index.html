@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Hedgehog"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{})
+			<main class="page">
+				<section class="main-screen">
+					<div class="main-screen__bg">
+						<picture><source srcset="img/main/background.webp" type="image/webp"><img src="img/main/background.png" alt="background image"></picture>
+					</div>
+					<div class="main-screen__bg main-screen__bg_mobile">
+						<picture><source srcset="img/main/background.webp" type="image/webp"><img src="img/main/background-mobile.png" alt="background image"></picture>
+					</div>
+					<div class="main-screen__title">
+						<picture><source srcset="img/main/title.svg" type="image/webp"><img src="img/main/title.svg" alt="title image"></picture>
+						<h2 class="main-screen__subtitle">тоже любят молоко</h2>
+						<p class="main-screen__text">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и царапать вашу мебель.</p>
+						<button class="main-screen__button popup__button">Купить ёжика</button>
+					</div>
+				</section>
+				<section class="points">
+					<div class="points__bg">
+						<picture><source srcset="img/points/01.webp" type="image/webp"><img class="points__bg_left" src="img/points/01.png" alt="points image"></picture>
+						<picture><source srcset="img/points/02.webp" type="image/webp"><img class="points__bg_right" src="img/points/02.png" alt="points image"></picture>
+					</div>
+					<div class="points__content">
+						<div class="points__card">
+							<div class="points__icon points__icon_01">
+								<picture><source srcset="img/icons/hedgehog.svg" type="image/webp"><img src="img/icons/hedgehog.svg" alt="card image"></picture>
+							</div>
+							<div class="points__title">Разведение ежиков</div>
+							<div class="points__text">Собственная ферма, уход и содержание</div>
+						</div>
+						<div class="points__card ">
+							<div class="points__icon points__icon_02">
+								<picture><source srcset="img/icons/vaccine.svg" type="image/webp"><img src="img/icons/vaccine.svg" alt="card image"></picture>
+							</div>
+							<div class="points__title">Здоровье</div>
+							<div class="points__text">Всегда прививаем и вовремя обследуем ваших будущих питомцев</div>
+						</div>
+						<div class="points__card">
+							<div class="points__icon points__icon_03">
+								<picture><source srcset="img/icons/like.svg" type="image/webp"><img src="img/icons/like.svg" alt="card image"></picture>
+							</div>
+							<div class="points__title">Любовь и забота</div>
+							<div class="points__text">Каждому ежику мы дарим много внимания</div>
+						</div>
+					</div>
+				</section>
+				<section class="shop">
+					<div class="_containerLittle">
+						<div class="shop__row">
+							<div class="shop__card shop__card_01">
+								<span class="shop__info">
+									<a ><picture><source srcset="img/icons/info.svg" type="image/webp"><img src="img/icons/info.svg" alt="info image"></picture></a>
+								</span>
+								<div class="message">
+									<div class="message__body">
+										<div class="message__vaccine">привит</div>
+										<div class="message__like">1235</div>
+									</div>
+								</div>
+								<div class="shop__description">
+									<div class="shop__title">Ежик “Евгений”</div>
+									<div class="shop__text">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной, любит внимаение</div>
+									<div class="shop__price">
+										1 500 ₽
+										<span class="shop__price_old">3 000 ₽</span>
+									</div>
+								</div>
+								<a href="" class="shop__button">
+									<picture><source srcset="img/icons/plus.svg" type="image/webp"><img src="img/icons/plus.svg" alt="plus image"></picture>
+								</a>
+							</div>
+							<div class="shop__card shop__card_02">
+								<span class="shop__info">
+									<a ><picture><source srcset="img/icons/info.svg" type="image/webp"><img src="img/icons/info.svg" alt="info image"></picture></a>
+								</span>
+								<div class="message">
+									<div class="message__body">
+										<div class="message__vaccine">привит</div>
+										<div class="message__like">1235</div>
+									</div>
+								</div>
+								<div class="shop__description">
+									<div class="shop__title">Ежик “Максим”</div>
+									<div class="shop__text">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной, любит внимаение</div>
+									<div class="shop__price">
+										1 500 ₽
+										<span class="shop__price_old">3 000 ₽</span>
+									</div>
+								</div>
+								<a href="" class="shop__button">
+									<picture><source srcset="img/icons/plus.svg" type="image/webp"><img src="img/icons/plus.svg" alt="plus image"></picture>
+								</a>
+							</div>
+							<div class="shop__card shop__card_03">
+								<div class="shop__description">
+									<div class="shop__title">Корм для ёжиков</div>
+									<div class="shop__text">Скомбинированое питание, которое содержит нужное количество витаминов и кальция</div>
+									<div class="shop__price">500 ₽</div>
+								</div>
+								<a href="" class="shop__button">
+									<picture><source srcset="img/icons/plus.svg" type="image/webp"><img src="img/icons/plus.svg" alt="plus image"></picture>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

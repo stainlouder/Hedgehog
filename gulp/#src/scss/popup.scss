@@ -1,0 +1,109 @@
+.popup {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	left: 0; 
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: none;
+	background-color: rgba($color: #000000, $alpha: 0.6);
+	overflow-y: auto;
+	&__close {
+		width: 32px;
+		height: 32px;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		cursor: pointer;
+		z-index: 30;
+		margin: 17px 22px 0 0;
+		background: url("../img/icons/close.svg") center center no-repeat;
+	}
+	&__content {
+		position: relative;
+		margin: 5% auto;
+		width: 580px;
+		height: 600px;
+		background-color: #fff;
+		border-radius: 10px;
+		box-shadow: 4px 4px 20px #C2CCCA;
+		@media (max-width: $md8+px) { 
+			width: 90%;
+		}
+	}
+	&__body {
+		padding: 50px;
+		width: 100%;
+		max-width: 580px;
+		@media (max-width: $md8+px) { 
+			padding: 20px;
+		}
+	}
+	&__title {
+		font-family: Cormorant Infant;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 29px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #195557;
+		padding: 0 0 30px 0;
+	}
+	&__form {
+	}
+	&__footer {
+		align-items: center;
+		text-align: center;
+	}
+	&__btn {
+		display: flex;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		padding: 27px 185px;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 16px;
+		position: relative;
+		border-radius: 40px;
+		background: #70908B;
+		color: #fff;
+		margin: 0 auto 15px auto;
+		box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
+		&:hover {
+			background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
+			box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
+		}
+		@media (max-width: $md8+px) { 
+			padding: 27px 100px;
+		}
+	}
+	&__info {
+		font-size: 10px;
+		line-height: 12px;
+		color: #195557;
+		span {
+			text-transform: uppercase;
+		}
+	}
+
+}
+.form {
+	&__body {
+	}
+	&__row {
+	}
+	&__city {
+		padding: 0 0 22px 0;
+	}
+	&__select {
+		display: block;
+	}
+	&__input {
+	}
+	&__checkboxses {
+		padding: 30px 0 35px 0;
+	}
+
+}
